@@ -1,0 +1,29 @@
+{
+  "id": "/",
+  "name": "汽车健康检测 / Vehicle Health Check",
+  "short_name": "汽车健康检测",
+  "description": "离线优先的二手车检查、证据记录与双语报告工具。",
+  "lang": "zh-CN",
+  "dir": "ltr",
+  "start_url": "/",
+  "scope": "/",
+  "display": "standalone",
+  "orientation": "any",
+  "background_color": "#edf7fb",
+  "theme_color": "#1c63e9",
+  "categories": ["utilities", "productivity"],
+  "icons": [
+    {
+      "src": "/icon-192.png",
+      "sizes": "192x192",
+      "type": "image/png",
+      "purpose": "any maskable"
+    },
+    {
+      "src": "/icon-512.png",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

@@ -1,0 +1,2232 @@
+{
+  "algorithm": "weighted-aggregate-deduction-v1",
+  "catalogHash": "8e03fca5fc535303b3b6d18d5f8e5578b2b3f2032fd25989260a740d94b1493b",
+  "contractVersion": "aggregate-scoring-rules-v1",
+  "parameters": {
+    "confidenceBands": {
+      "highMinimum": 80,
+      "mediumMinimum": 50
+    },
+    "lowCoverageThreshold": 80,
+    "maxMissingEvidenceConfidencePenalty": 15,
+    "missingEvidenceConfidencePenalty": 5,
+    "noConfirmedEvidenceScore": 50,
+    "quickCompletenessCap": 89,
+    "quickConfidenceCap": 79,
+    "unverifiedVinConfidencePenalty": 10
+  },
+  "rules": [
+    {
+      "aggregationKey": "AGG-12-0002",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-002"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0007",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-007"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-12-0014",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-014"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0015",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-015"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0016",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-016"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0017",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-017"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0021",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-021"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0022",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-022"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0023",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-023"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0024",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-024"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0032",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-032"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0033",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-033"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0038",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-038"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0040",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-040"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0041",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-041"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0042",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-042"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0043",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-043"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0044",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-044"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0047",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-047"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0049",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-049"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0050",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-050"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0051",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-051"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0052",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-052"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0053",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-053"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0054",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-054"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0055",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-055"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0056",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-056"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0058",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-058"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0062",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-062"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0063",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-063"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0065",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-065"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0070",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-070"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0071",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-071"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0122",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-022"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0203",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-081"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0204",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-082"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0205",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-083"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0207",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-085"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0208",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": "battery",
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-086"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0209",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-087"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0210",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-088"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-12-0211",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-089"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0212",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-090"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-12-0214",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-092"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-ABS-ESP-STATUS",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-030",
+        "VHC-GEN-072"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-ADAS-STATUS",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-030",
+        "VHC-GEN-072",
+        "VHC-GEN-TSLA-018"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-AUDIO-OUTPUT",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-019",
+        "VHC-GEN-TSLA-014"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-BRAKE-DISC",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-057",
+        "VHC-GEN-075"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-BURN-MELT-APPEARANCE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": "heat",
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-046",
+        "VHC-GEN-080"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-CABIN-CONTAMINATION",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-025"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-CABIN-MOVEMENT-NOISE",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-028",
+        "VHC-GEN-TSLA-021"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-CABIN-ODOR",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-020",
+        "VHC-GEN-025",
+        "VHC-GEN-TSLA-011",
+        "VHC-GEN-TSLA-015"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-CHARGE-CONNECTOR-EXTERIOR",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-008",
+        "VHC-GEN-TSLA-019"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-CHARGE-FLAP",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-008"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-CHARGING-OPERATION",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-019"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-CLIMATE-OPERATION",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-020",
+        "VHC-GEN-TSLA-015"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-COLD-EXHAUST",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-034",
+        "VHC-GEN-045"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-COOLANT-CONTAMINATION",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-035",
+        "VHC-GEN-037"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-COOLANT-LEVEL",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-035"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-COOLANT-RESIDUE",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-036",
+        "VHC-GEN-073"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-DISPLAY-HARDWARE",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-013"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-ENGINE-OIL-CONTAMINATION",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-037"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-FRUNK-LID",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-017"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-GLASS-DAMAGE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-008",
+        "VHC-GEN-TSLA-010"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-GLASS-DATE",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-009",
+        "VHC-GEN-TSLA-005"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-HV-EXTERIOR",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-048",
+        "VHC-GEN-084"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-LOW-VOLTAGE-WIRING",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-029",
+        "VHC-GEN-046",
+        "VHC-GEN-048",
+        "VHC-GEN-080"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-MEDIA-CONNECTIVITY",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-019",
+        "VHC-GEN-031"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-MEDIA-SYSTEM-STATE",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-019",
+        "VHC-GEN-031",
+        "VHC-GEN-TSLA-013"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-PAINT-APPEARANCE",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-003",
+        "VHC-GEN-TSLA-004"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-PAINT-MEASUREMENT",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-006",
+        "VHC-GEN-066",
+        "VHC-GEN-078"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-PANEL-GAPS",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-004",
+        "VHC-GEN-TSLA-007"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-PHYSICAL-CONTROL",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-018"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-PREDRIVE-VISIBLE-LEAK",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-046"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-RECORD-PROVENANCE",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-001",
+        "VHC-GEN-093",
+        "VHC-GEN-TSLA-002"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-RECORDED-LEGAL-ISSUE",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-001"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-REPORTED-HISTORY",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-001"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-REQUIRED-DOCUMENT",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-002"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-ROOF-SUNSHADE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-010"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-SEAT-ADJUSTMENT",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-018",
+        "VHC-GEN-TSLA-009"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-SEAT-UPHOLSTERY",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-009"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-STATIC-BRAKE-EXECUTION-GATE",
+      "category": "safety",
+      "penalties": {
+        "minor": 0,
+        "moderate": 0,
+        "none": 0,
+        "serious": 0
+      },
+      "reviewFamily": null,
+      "role": "execution_gate_unscored",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-094"
+      ],
+      "weight": 0
+    },
+    {
+      "aggregationKey": "AGG-STATIC-STEERING",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-061",
+        "VHC-GEN-TSLA-023"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-STORAGE-FIT",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-012"
+      ],
+      "weight": 1
+    },
+    {
+      "aggregationKey": "AGG-STRUCTURAL-CONDITION",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": "structure",
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-005",
+        "VHC-GEN-067",
+        "VHC-GEN-069",
+        "VHC-GEN-091"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-SUSPENSION-JOINTS",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-064",
+        "VHC-GEN-076"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-SUSPENSION-RESPONSE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-059",
+        "VHC-GEN-060",
+        "VHC-GEN-TSLA-021"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-TIRE-CARCASS",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-011",
+        "VHC-GEN-012",
+        "VHC-GEN-TSLA-006"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-TIRE-DATE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-011",
+        "VHC-GEN-TSLA-006"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-TIRE-SPECIFICATION",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-TSLA-006"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-TIRE-TREAD",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-010",
+        "VHC-GEN-TSLA-006"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-UNDERBODY-COATING",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-069"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-VEHICLE-IDENTITY",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-001",
+        "VHC-GEN-093",
+        "VHC-GEN-TSLA-001",
+        "VHC-GEN-TSLA-002"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-WATER-TRACES",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": "water",
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-025",
+        "VHC-GEN-068",
+        "VHC-GEN-079",
+        "VHC-GEN-TSLA-010",
+        "VHC-GEN-TSLA-012",
+        "VHC-GEN-TSLA-017"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-WEAR-RECORD-CONSISTENCY",
+      "category": "documents",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-026",
+        "VHC-GEN-027"
+      ],
+      "weight": 2
+    },
+    {
+      "aggregationKey": "AGG-WEATHER-SEAL",
+      "category": "body",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-068",
+        "VHC-GEN-TSLA-008",
+        "VHC-GEN-TSLA-017"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-WHEEL-DAMAGE",
+      "category": "safety",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": 45
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-013",
+        "VHC-GEN-TSLA-006"
+      ],
+      "weight": 3
+    },
+    {
+      "aggregationKey": "AGG-WINDOW-OPERATION",
+      "category": "mechanical",
+      "penalties": {
+        "minor": 12,
+        "moderate": 28,
+        "none": 0,
+        "serious": 60
+      },
+      "reviewFamily": null,
+      "role": "vehicle_condition",
+      "safetyCaps": {
+        "minor": null,
+        "moderate": null,
+        "none": null,
+        "serious": null
+      },
+      "sourceDefinitionKeys": [
+        "VHC-GEN-018",
+        "VHC-GEN-TSLA-016"
+      ],
+      "weight": 3
+    }
+  ],
+  "scoringVersionId": "score-rule-v1.2.0"
+}

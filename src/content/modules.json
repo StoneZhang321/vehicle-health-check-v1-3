@@ -1,0 +1,2202 @@
+{
+  "asset_type": "workflow_modules",
+  "content_version": "checklist-v1.2.0",
+  "modules": [
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 100,
+      "kind": "documents",
+      "localized_label": {
+        "en": "Before-visit records",
+        "zh": "出发前资料"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-DOCUMENTS",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 200,
+      "kind": "arrival",
+      "localized_label": {
+        "en": "Arrival and identity",
+        "zh": "到场确认"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-IDENTITY",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 300,
+      "kind": "vehicle_state",
+      "localized_label": {
+        "en": "Cold checks",
+        "zh": "冷车检查"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-COLD",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": [
+          "cold_state_verified_before_first_start"
+        ]
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 400,
+      "kind": "position",
+      "localized_label": {
+        "en": "Front",
+        "zh": "车头"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-FRONT",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 500,
+      "kind": "position",
+      "localized_label": {
+        "en": "Right side",
+        "zh": "右侧"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-RIGHT",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 600,
+      "kind": "position",
+      "localized_label": {
+        "en": "Roof",
+        "zh": "车顶"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-ROOF",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "safe_ground_or_cabin_view"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 700,
+      "kind": "position",
+      "localized_label": {
+        "en": "Rear",
+        "zh": "车尾"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-REAR",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 800,
+      "kind": "position",
+      "localized_label": {
+        "en": "Left side",
+        "zh": "左侧"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-LEFT",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 900,
+      "kind": "position",
+      "localized_label": {
+        "en": "Cabin",
+        "zh": "车内"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-CABIN",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": []
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 1000,
+      "kind": "position",
+      "localized_label": {
+        "en": "Powertrain bay",
+        "zh": "动力舱"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-ENGINE",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "visible_access_without_disassembly"
+        ],
+        "tools": [],
+        "vehicle_state": [
+          "powertrain_off_cooled_and_auto_start_disabled"
+        ]
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 1100,
+      "kind": "equipment",
+      "localized_label": {
+        "en": "Underbody and lift",
+        "zh": "底盘与举升"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-LIFT",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [
+          "qualified_lift_operator"
+        ],
+        "site": [
+          "professional_lift_or_inspection_pit"
+        ],
+        "tools": [],
+        "vehicle_state": [
+          "vehicle_securely_supported_per_oem"
+        ]
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 1200,
+      "kind": "vehicle_state",
+      "localized_label": {
+        "en": "Road test",
+        "zh": "路试"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-ROAD",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [
+          "licensed_authorized_driver"
+        ],
+        "site": [
+          "legal_safe_road_test_available"
+        ],
+        "tools": [],
+        "vehicle_state": [
+          "pre_drive_safety_confirmed"
+        ]
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 300,
+        "min_seconds": 180,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    },
+    {
+      "change_reason": {
+        "en": "Group work by physical location, vehicle state and equipment.",
+        "zh": "按实际位置、状态和工具条件连续执行。"
+      },
+      "default_sort_order": 1300,
+      "kind": "reinspection",
+      "localized_label": {
+        "en": "After-drive recheck",
+        "zh": "驶后复检"
+      },
+      "market_applicability": [
+        "CN",
+        "US",
+        "CA"
+      ],
+      "mode_applicability": [
+        "quick",
+        "full"
+      ],
+      "module_stable_key": "MOD-POSTDRIVE",
+      "requirements": {
+        "cooperation": [],
+        "qualification": [],
+        "site": [
+          "vehicle_parked_and_secured"
+        ],
+        "tools": [],
+        "vehicle_state": [
+          "normal_drive_complete",
+          "parts_naturally_cooled"
+        ]
+      },
+      "setup_duration_range": {
+        "estimate_version": "duration-v1.2.0-draft-1",
+        "max_seconds": 30,
+        "min_seconds": 0,
+        "validation_evidence_refs": [],
+        "validation_status": "unvalidated"
+      },
+      "source_refs": [
+        "SPEC-V1.2-7.4"
+      ],
+      "vehicle_applicability": {
+        "powertrains": [
+          "gasoline",
+          "diesel",
+          "hev",
+          "phev",
+          "erev",
+          "bev"
+        ],
+        "steering_positions": [
+          "LHD",
+          "RHD"
+        ],
+        "vehicle_types": [
+          "passenger_car",
+          "suv",
+          "mpv",
+          "light_pickup"
+        ]
+      }
+    }
+  ],
+  "positions": [
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 100,
+      "localized_label": {
+        "en": "Records and history",
+        "zh": "资料与历史"
+      },
+      "module_stable_key": "MOD-DOCUMENTS",
+      "position_key": "POS-12-0001",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 200,
+      "localized_label": {
+        "en": "Vehicle identity",
+        "zh": "车辆身份"
+      },
+      "module_stable_key": "MOD-IDENTITY",
+      "position_key": "POS-12-0002",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 300,
+      "localized_label": {
+        "en": "Supplied keys",
+        "zh": "随车钥匙"
+      },
+      "module_stable_key": "MOD-IDENTITY",
+      "position_key": "POS-12-0003",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 400,
+      "localized_label": {
+        "en": "Pre-start diagnostic data",
+        "zh": "启动前诊断数据"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0004",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 600,
+      "localized_label": {
+        "en": "Visible cooling circuit",
+        "zh": "冷却回路可见处"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0005",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 500,
+      "localized_label": {
+        "en": "Cold fluid check points",
+        "zh": "冷车液位检查点"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0006",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 700,
+      "localized_label": {
+        "en": "Pre-drive visible leak area",
+        "zh": "驶前可见渗漏区域"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0007",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 800,
+      "localized_label": {
+        "en": "Cold-start state",
+        "zh": "冷启动状态"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0008",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 900,
+      "localized_label": {
+        "en": "Cold-start exhaust observation",
+        "zh": "冷启动尾气观察区"
+      },
+      "module_stable_key": "MOD-COLD",
+      "position_key": "POS-12-0009",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1000,
+      "localized_label": {
+        "en": "Hood surface",
+        "zh": "前盖表面"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0010",
+      "side": "front",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1100,
+      "localized_label": {
+        "en": "Windshield",
+        "zh": "前风挡"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0012",
+      "side": "front",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "front_trunk_if_equipped",
+      "default_sort_order": 1600,
+      "localized_label": {
+        "en": "Front trunk",
+        "zh": "前备箱"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0014",
+      "side": "front",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1800,
+      "localized_label": {
+        "en": "Right-front wheel",
+        "zh": "右前轮"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0015",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2400,
+      "localized_label": {
+        "en": "Right-side lights",
+        "zh": "右侧车灯"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0019",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3300,
+      "localized_label": {
+        "en": "Right-rear wheel",
+        "zh": "右后轮"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0021",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3400,
+      "localized_label": {
+        "en": "Roof surface and edges",
+        "zh": "车顶表面及边缘"
+      },
+      "module_stable_key": "MOD-ROOF",
+      "position_key": "POS-12-0022",
+      "side": "upper",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "glass_roof_if_equipped",
+      "default_sort_order": 3500,
+      "localized_label": {
+        "en": "Roof glass",
+        "zh": "车顶玻璃"
+      },
+      "module_stable_key": "MOD-ROOF",
+      "position_key": "POS-12-0023",
+      "side": "upper",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "rear_window_if_equipped",
+      "default_sort_order": 3800,
+      "localized_label": {
+        "en": "Rear window",
+        "zh": "后风挡"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0024",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3900,
+      "localized_label": {
+        "en": "Rear panels",
+        "zh": "尾部面板"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0026",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4000,
+      "localized_label": {
+        "en": "Tailgate or trunk lid",
+        "zh": "尾门或后盖"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0027",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4100,
+      "localized_label": {
+        "en": "Visible luggage compartment",
+        "zh": "后备箱可见内部"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0028",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4200,
+      "localized_label": {
+        "en": "Supplied emergency equipment",
+        "zh": "随车应急用品"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0029",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4300,
+      "localized_label": {
+        "en": "Rear exhaust",
+        "zh": "排气尾段"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0031",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5000,
+      "localized_label": {
+        "en": "Left-rear wheel",
+        "zh": "左后轮"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0032",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5900,
+      "localized_label": {
+        "en": "Left-side lights",
+        "zh": "左侧车灯"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0036",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6500,
+      "localized_label": {
+        "en": "Left-front wheel",
+        "zh": "左前轮"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0038",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4700,
+      "localized_label": {
+        "en": "Actual fuel-filler location",
+        "zh": "加油口实际位置"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0039",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4800,
+      "localized_label": {
+        "en": "Actual charge-port location",
+        "zh": "充电口实际位置"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0040",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4900,
+      "localized_label": {
+        "en": "Charging connection",
+        "zh": "充电连接位置"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0041",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6600,
+      "localized_label": {
+        "en": "Driver seat and belt",
+        "zh": "驾驶座及安全带"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0042",
+      "side": "driver",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": {
+        "LHD": "left_front",
+        "RHD": "right_front"
+      },
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7800,
+      "localized_label": {
+        "en": "Front-passenger seat and belt",
+        "zh": "前排乘客座及安全带"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0043",
+      "side": "front_passenger",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": {
+        "LHD": "right_front",
+        "RHD": "left_front"
+      },
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6900,
+      "localized_label": {
+        "en": "Cabin controls",
+        "zh": "车内操控区"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0045",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7300,
+      "localized_label": {
+        "en": "Cabin climate outlets",
+        "zh": "车内空调出风区"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0046",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7400,
+      "localized_label": {
+        "en": "Cabin environment",
+        "zh": "车内整体环境"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0047",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7100,
+      "localized_label": {
+        "en": "Cabin wear surfaces",
+        "zh": "内饰常接触部位"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0048",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7000,
+      "localized_label": {
+        "en": "Safety-system display and records",
+        "zh": "安全系统显示与记录"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0049",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7200,
+      "localized_label": {
+        "en": "Visible cabin wiring",
+        "zh": "车内可见线束"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0050",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7500,
+      "localized_label": {
+        "en": "Cabin storage",
+        "zh": "车内储物格"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0051",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6700,
+      "localized_label": {
+        "en": "Brake pedal and professional data",
+        "zh": "制动踏板及专业数据"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0052",
+      "side": "driver",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": {
+        "LHD": "left_front",
+        "RHD": "right_front"
+      },
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6800,
+      "localized_label": {
+        "en": "Stationary steering",
+        "zh": "驻车转向"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0053",
+      "side": "driver",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": {
+        "LHD": "left_front",
+        "RHD": "right_front"
+      },
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7600,
+      "localized_label": {
+        "en": "Left-front footwell",
+        "zh": "左前脚坑"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0054",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 7700,
+      "localized_label": {
+        "en": "Right-front footwell",
+        "zh": "右前脚坑"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0055",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 8500,
+      "localized_label": {
+        "en": "Traction-battery cooling inlet",
+        "zh": "动力电池冷却进风口"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0056",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 8600,
+      "localized_label": {
+        "en": "Visible powertrain-bay components",
+        "zh": "动力舱可见部件"
+      },
+      "module_stable_key": "MOD-ENGINE",
+      "position_key": "POS-12-0057",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 8700,
+      "localized_label": {
+        "en": "Visible powertrain-bay wiring",
+        "zh": "动力舱可见线束"
+      },
+      "module_stable_key": "MOD-ENGINE",
+      "position_key": "POS-12-0058",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 8800,
+      "localized_label": {
+        "en": "Visible fuel lines",
+        "zh": "可见燃油管路"
+      },
+      "module_stable_key": "MOD-ENGINE",
+      "position_key": "POS-12-0059",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 8900,
+      "localized_label": {
+        "en": "Actual low-voltage battery location",
+        "zh": "低压电池实际位置"
+      },
+      "module_stable_key": "MOD-ENGINE",
+      "position_key": "POS-12-0060",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9000,
+      "localized_label": {
+        "en": "Visible high-voltage boundary",
+        "zh": "可见高压边界"
+      },
+      "module_stable_key": "MOD-ENGINE",
+      "position_key": "POS-12-0061",
+      "side": "configuration",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1700,
+      "localized_label": {
+        "en": "Ground-level front underbody edge",
+        "zh": "车底前部边缘可见处"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0062",
+      "side": "front",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4400,
+      "localized_label": {
+        "en": "Ground-level rear underbody edge",
+        "zh": "车底后部边缘可见处"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0063",
+      "side": "rear",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9100,
+      "localized_label": {
+        "en": "Lifted right-front components",
+        "zh": "举升后右前部件"
+      },
+      "module_stable_key": "MOD-LIFT",
+      "position_key": "POS-12-0064",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9200,
+      "localized_label": {
+        "en": "Lifted right-rear components",
+        "zh": "举升后右后部件"
+      },
+      "module_stable_key": "MOD-LIFT",
+      "position_key": "POS-12-0065",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9300,
+      "localized_label": {
+        "en": "Lifted left-rear components",
+        "zh": "举升后左后部件"
+      },
+      "module_stable_key": "MOD-LIFT",
+      "position_key": "POS-12-0066",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9400,
+      "localized_label": {
+        "en": "Lifted left-front components",
+        "zh": "举升后左前部件"
+      },
+      "module_stable_key": "MOD-LIFT",
+      "position_key": "POS-12-0067",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9500,
+      "localized_label": {
+        "en": "Lifted driveline",
+        "zh": "举升后传动系统"
+      },
+      "module_stable_key": "MOD-LIFT",
+      "position_key": "POS-12-0068",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9600,
+      "localized_label": {
+        "en": "Legal safe driving",
+        "zh": "合法安全行驶过程"
+      },
+      "module_stable_key": "MOD-ROAD",
+      "position_key": "POS-12-0069",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9700,
+      "localized_label": {
+        "en": "Cooled same-area recheck",
+        "zh": "冷却后同区域复检"
+      },
+      "module_stable_key": "MOD-POSTDRIVE",
+      "position_key": "POS-12-0070",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 9800,
+      "localized_label": {
+        "en": "Ground beneath the cooled vehicle",
+        "zh": "冷却后车底地面"
+      },
+      "module_stable_key": "MOD-POSTDRIVE",
+      "position_key": "POS-12-0071",
+      "side": "none",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1900,
+      "localized_label": {
+        "en": "Right-front fender",
+        "zh": "右前翼子板"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0072",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2100,
+      "localized_label": {
+        "en": "Right-front door panel",
+        "zh": "右前门板外表面"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0073",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "right_rear_door_if_equipped",
+      "default_sort_order": 2700,
+      "localized_label": {
+        "en": "Right-rear door panel",
+        "zh": "右后门板外表面"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0074",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3100,
+      "localized_label": {
+        "en": "Right-rear quarter panel",
+        "zh": "右后侧围"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0075",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6400,
+      "localized_label": {
+        "en": "Left-front fender",
+        "zh": "左前翼子板"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0076",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6200,
+      "localized_label": {
+        "en": "Left-front door panel",
+        "zh": "左前门板外表面"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0077",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "left_rear_door_if_equipped",
+      "default_sort_order": 5600,
+      "localized_label": {
+        "en": "Left-rear door panel",
+        "zh": "左后门板外表面"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0078",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5200,
+      "localized_label": {
+        "en": "Left-rear quarter panel",
+        "zh": "左后侧围"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0079",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2200,
+      "localized_label": {
+        "en": "Right-front door",
+        "zh": "右前门"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0080",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "right_rear_door_if_equipped",
+      "default_sort_order": 2800,
+      "localized_label": {
+        "en": "Right-rear door",
+        "zh": "右后门"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0081",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6100,
+      "localized_label": {
+        "en": "Left-front door",
+        "zh": "左前门"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0082",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "left_rear_door_if_equipped",
+      "default_sort_order": 5500,
+      "localized_label": {
+        "en": "Left-rear door",
+        "zh": "左后门"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0083",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2300,
+      "localized_label": {
+        "en": "Right-front side glass",
+        "zh": "右前侧玻璃"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0084",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2900,
+      "localized_label": {
+        "en": "Right-rear side glass",
+        "zh": "右后侧玻璃"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0085",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6000,
+      "localized_label": {
+        "en": "Left-front side glass",
+        "zh": "左前侧玻璃"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0086",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5400,
+      "localized_label": {
+        "en": "Left-rear side glass",
+        "zh": "左后侧玻璃"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0087",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2500,
+      "localized_label": {
+        "en": "Right sill",
+        "zh": "右侧门槛"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0088",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2000,
+      "localized_label": {
+        "en": "Right A-pillar",
+        "zh": "右A柱"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0089",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 2600,
+      "localized_label": {
+        "en": "Right B-pillar",
+        "zh": "右B柱"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0090",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3000,
+      "localized_label": {
+        "en": "Right C-pillar",
+        "zh": "右C柱"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0091",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5800,
+      "localized_label": {
+        "en": "Left sill",
+        "zh": "左侧门槛"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0092",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 6300,
+      "localized_label": {
+        "en": "Left A-pillar",
+        "zh": "左A柱"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0093",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5700,
+      "localized_label": {
+        "en": "Left B-pillar",
+        "zh": "左B柱"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0094",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 5300,
+      "localized_label": {
+        "en": "Left C-pillar",
+        "zh": "左C柱"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0095",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1300,
+      "localized_label": {
+        "en": "Visible left-front rail and joints",
+        "zh": "左前可见纵梁与连接处"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0096",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1500,
+      "localized_label": {
+        "en": "Visible right-front rail and joints",
+        "zh": "右前可见纵梁与连接处"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0097",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4500,
+      "localized_label": {
+        "en": "Visible left-rear rail and joints",
+        "zh": "左后可见纵梁与连接处"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0098",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3700,
+      "localized_label": {
+        "en": "Visible right-rear rail and joints",
+        "zh": "右后可见纵梁与连接处"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0099",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1200,
+      "localized_label": {
+        "en": "Left-front light assembly",
+        "zh": "左前灯组"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0100",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 1400,
+      "localized_label": {
+        "en": "Right-front light assembly",
+        "zh": "右前灯组"
+      },
+      "module_stable_key": "MOD-FRONT",
+      "position_key": "POS-12-0101",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 4600,
+      "localized_label": {
+        "en": "Left-rear light assembly",
+        "zh": "左后灯组"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0102",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "as_equipped",
+      "default_sort_order": 3600,
+      "localized_label": {
+        "en": "Right-rear light assembly",
+        "zh": "右后灯组"
+      },
+      "module_stable_key": "MOD-REAR",
+      "position_key": "POS-12-0103",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "second_row_left_seat_if_equipped",
+      "default_sort_order": 7900,
+      "localized_label": {
+        "en": "Second-row left seat",
+        "zh": "第二排左座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0104",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "second_row_middle_seat_if_equipped",
+      "default_sort_order": 8000,
+      "localized_label": {
+        "en": "Second-row center seat",
+        "zh": "第二排中座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0105",
+      "side": "center",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "second_row_right_seat_if_equipped",
+      "default_sort_order": 8100,
+      "localized_label": {
+        "en": "Second-row right seat",
+        "zh": "第二排右座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0106",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "third_row_left_seat_if_equipped",
+      "default_sort_order": 8200,
+      "localized_label": {
+        "en": "Third-row left seat",
+        "zh": "第三排左座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0107",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "third_row_right_seat_if_equipped",
+      "default_sort_order": 8400,
+      "localized_label": {
+        "en": "Third-row right seat",
+        "zh": "第三排右座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0108",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "third_row_middle_seat_if_equipped",
+      "default_sort_order": 8300,
+      "localized_label": {
+        "en": "Third-row center seat",
+        "zh": "第三排中座"
+      },
+      "module_stable_key": "MOD-CABIN",
+      "position_key": "POS-12-0109",
+      "side": "center",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "left_d_pillar_if_equipped",
+      "default_sort_order": 5100,
+      "localized_label": {
+        "en": "Left D-pillar",
+        "zh": "左D柱"
+      },
+      "module_stable_key": "MOD-LEFT",
+      "position_key": "POS-12-0110",
+      "side": "left",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    },
+    {
+      "configuration_condition": "right_d_pillar_if_equipped",
+      "default_sort_order": 3200,
+      "localized_label": {
+        "en": "Right D-pillar",
+        "zh": "右D柱"
+      },
+      "module_stable_key": "MOD-RIGHT",
+      "position_key": "POS-12-0111",
+      "side": "right",
+      "side_reference": "vehicle_forward_direction",
+      "steering_resolution": null,
+      "visibility_rule": "unknown_if_not_accessible"
+    }
+  ],
+  "publication_ready": true,
+  "schema_version": "content-contract-v1.2.0",
+  "status": "published",
+  "workflow_version": "workflow-v1.2.0"
+}

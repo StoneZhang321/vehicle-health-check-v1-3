@@ -1,0 +1,22 @@
+/* 中文：报告以可读正文为主，窄屏自动换行，长原文保留段落。 English: Reports prioritize readable content, wrap on narrow screens and preserve source paragraphs. */
+.report-view{max-width:1120px;margin:0 auto;line-height:1.65;overflow-wrap:anywhere;color:inherit}
+.report-view h1,.report-view h2,.report-view h3,.report-view h4{line-height:1.45;font-weight:var(--heading-weight,600);margin:0 0 .65rem}
+.report-view h1{font-size:clamp(1.45rem,4vw,2.25rem)}
+.report-view h2{font-size:1.25rem;margin-top:1.4rem}.report-view h3{font-size:1.05rem}.report-view h4{font-size:.95rem}
+.report-view p{margin:.6rem 0}.report-toolbar{display:flex;flex-wrap:wrap;gap:.6rem;margin:0 0 1rem}
+.report-toolbar button,.report-attachment-actions button{min-height:44px;white-space:normal}
+.report-heading,.report-overview,.report-materials,.report-footer{border:1px solid var(--line,#dce6ed);border-radius:var(--radius-card,24px);padding:clamp(18px,2.5vw,28px);margin:1rem 0;background:var(--panel);box-shadow:var(--shadow)}
+.report-statement{border-left:3px solid #2084ab;padding:.5rem .8rem}.report-muted{opacity:.76;font-size:.92rem}.report-preserve{white-space:pre-wrap;overflow-wrap:anywhere}
+.report-details{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:.8rem 1.4rem;margin:1rem 0}
+.report-details dt{font-size:.85rem;opacity:.75}.report-details dd{margin:0;overflow-wrap:anywhere}
+.report-metrics{display:grid;grid-template-columns:repeat(4,minmax(0,1fr));gap:10px}.report-metrics p{font-size:.85rem}.report-metrics strong{display:block;font-size:1.25rem}
+.report-primary-score{font-size:clamp(1.5rem,4vw,2.3rem);font-weight:600}.report-secondary-score{font-size:1rem}.report-caution{background:var(--warning-soft,#fff5d9);color:var(--ink-soft,#674900);border-radius:var(--radius-control,14px);padding:.7rem .9rem}
+.report-section{border:1px solid var(--line,#dce6ed);border-radius:20px;background:var(--panel);margin:.9rem 0;min-width:0;overflow:hidden}.report-section>summary{padding:1rem 1.25rem;cursor:pointer;min-height:44px}.report-section>summary:focus-visible{outline-offset:-4px;border-radius:18px}.report-section>summary strong{margin-right:1rem;font-weight:500}.report-section>summary span{font-size:.88rem;opacity:.75}
+.report-section-body{padding:0 clamp(16px,2vw,24px)}.report-task{padding:1.1rem 0;border-top:1px solid var(--line,#dce6ed)}.report-task-title{display:flex;gap:1rem;align-items:flex-start;justify-content:space-between;flex-wrap:wrap}.report-task-title h3{flex:1 1 200px}
+.report-status{display:inline-block;border:1px solid currentColor;border-radius:99px;padding:.2rem .65rem;font-size:.85rem;max-width:100%}.report-status-normal{color:#16785e}.report-status-abnormal{color:#b13328}.report-status-unknown{color:#976100}.report-status-unassessed{opacity:.7}
+.report-measurement{border-left:3px solid var(--line,#dce6ed);padding:.4rem .8rem;margin:.8rem 0}.report-measurement p{margin:.3rem 0}
+.report-photos{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:12px}.report-photo{margin:.5rem 0;min-width:0}.report-photo a{display:block}.report-photo img{display:block;max-width:100%;max-height:450px;object-fit:contain;border-radius:8px}.report-photo figcaption{font-size:.85rem;opacity:.75;margin-top:.4rem}
+.report-materials article+article{border-top:1px solid var(--line,#dce6ed);margin-top:1rem;padding-top:1rem}.report-attachment-actions{display:flex;gap:.6rem;flex-wrap:wrap}
+.report-feedback{padding:.8rem;background:#e8f6ef;color:#176148;border-radius:8px}.report-error{padding:.8rem;background:#fff0ee;color:#922c25;border-radius:8px}.report-footer{font-size:.85rem;opacity:.82}
+@media(max-width:600px){.report-details,.report-photos{grid-template-columns:1fr}.report-metrics{grid-template-columns:repeat(2,minmax(0,1fr))}.report-toolbar button{flex:1 1 140px}}
+@media(prefers-color-scheme:dark){.report-status-normal{color:#53cba4}.report-status-abnormal{color:#ff9388}.report-status-unknown{color:#e4b453}}
